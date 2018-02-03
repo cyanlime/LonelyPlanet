@@ -1,0 +1,767 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cover {
+    z-index: 100;
+    /* background: black; */
+    width: 100%;
+    height: 100%;
+    /* background-size: cover;
+    background-position: 50%; */
+    filter: brightness(90%);
+    opacity: 10%;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+}
+
+@keyframes narrow{
+    /* from {width: 120%; height: 120%;}
+    to {width:100%; height: 100%;} */
+    /* from {transform: scale(1.3);}
+    to {transform: scale(1);} */
+    from {background-size: 140% 140%}
+    to {background-size: 100% 100%}
+    /* from {transform: scale(1.3);}
+    to {transform: scale(1);} */
+}
+.background {
+    /* transition: background-image 500ms linear; */
+    animation: narrow 16s;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-size: cover;
+    /* background-size: 150% 150%; */
+    background-position: 50%;
+    z-index: -100;
+    /* transform: scale(0.1); */
+    position: absolute;
+    display: block;
+    width: 1280px;
+    height: 710px;
+    /* background-repeat: no-repeat; */
+    /* width: inherit;
+    height: inherit; */
+    background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%), url("https://lonelyplanetstatic.imgix.net/copilot/images/Y291cGxlb25iZWFjaF9sb25lbHlwbGFuZXQuanBnV2VkIERlYyAyMCAyMDE3IDEwOjAxOjI5IEdNVCswMDAwIChVVEMp.jpg?q=40&sharp=10&w=2500");
+}
+/* .cover:hover{
+    transform: scale(0.9);
+} */
+.headline {
+    /* position: fixed; */
+    height: 156px;
+    border-bottom: 1px solid #fff;
+    margin-left: 70px;
+    margin-right: 70px;
+    left: 0px;
+    right: 0px;
+}
+.search-results {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 157px;
+    background-color: #fff;
+}
+.search.results {
+    width: 1140px;
+    margin-left: 70px;
+    margin-right: 70px;
+    /* left: 70px; */
+    /* right: 70px; */
+    position: relative;
+    /* left: 70px; */
+    /* right: 70px; */
+}
+.search.results span {
+    color: #999;
+}
+.search.results span:hover {
+    margin-left: 10px;
+}
+.search.results input {
+    color: #999;
+    vertical-align: middle;
+    height: 157px;
+    line-height: 157px;
+    font-size: 24px;
+    font-weight: 200;
+    margin-left: 10px;
+    border: 0px solid transparent;
+    width: 1050px;
+}
+.search.results input:focus {
+    outline: none;
+}
+.cancle:hover{
+    color: black !important;
+}
+.search {
+    display: inline-block;
+    float: left;
+    width: 440px;
+    height: 157px;
+}
+.search img {
+    vertical-align: middle;
+    margin: 10px;
+    margin-right: 0px;
+}
+.search span {
+    vertical-align: middle;
+    height: 157px;
+    line-height: 157px;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    margin-left: 10px;
+}
+.search span:hover{
+    opacity: 0.6;
+    margin-left: 5px;
+}
+.logo {
+    float: left;
+    display: inline-block;
+}
+.logo img {
+    float: left;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+ul.navigation {
+    display: inline-block;
+    float: left;
+}
+ul.navigation li {
+    float: left;
+    list-style-type: none;
+    height: 157px;
+    line-height: 157px;
+    width: 105px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+ul.navigation li a, .featured-article span a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+ul.navigation li a:hover{
+    opacity: 0.6;
+}
+li.signin {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    height: 40px !important;    
+    line-height: 40px !important;
+    width: 95px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 58px;
+    margin-bottom: 58px;
+    vertical-align: middle;
+}
+li.signin:hover{
+    background: rgba(255, 255, 255, 0.1);
+    /* opacity: 0.2; */
+    /* color: wheat; */
+}
+.featured-article {
+    width: 780px;
+    height: 290px;
+    color: #fff;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.featured-article span {
+    float: left;
+    font-size: 12px;
+    margin-top: 95px;
+    margin-bottom: 10px;
+    /* margin-bottom: 35px; */
+}
+span.title {
+    float: left;
+    font-size: 50px;
+    font-weight: 700;
+    /* margin-top: 0px; */
+    margin: 0px;
+    cursor: pointer;
+}
+span.title a {
+    line-height: 60px;
+}
+.read-more {
+    margin-left: 70px;
+    margin-right: 70px;
+    color: #fff;
+    font-size: 12px;
+    height: 105px;
+    line-height: 80px;
+    width: 100px;
+    border-top: 0.3px solid #eee;
+    /* border-bottom: 1px solid #eee; */
+}
+ul.tab-navigation {
+    display: flex;
+    /* filter: contrast(10%); */
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 12px;
+    border-top: 0.3px solid #fff;
+}
+ul.tab-navigation li {
+    float: left;
+    display: flex;
+    /* text-decoration: none; */
+    list-style-type: none;
+    width: 280px;
+    color: #fff;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    cursor: pointer;
+    border-top: 3px solid transparent;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+}
+.selected-tabs{
+    border-color: #fff !important;
+}
+span.num {
+    float: left;
+    padding: 7px;
+    border: 1px solid;
+}
+span.tab-title {
+    float: left;
+    width: 160px;
+    margin-left: 15px;
+}
+
+.fix2 {
+    top: 0px;
+    width: 1280px;
+    height: 500px;
+    /* position: fixed; */
+}
+.container {
+    position: relative;
+    height: 800px;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.travel-inspiration-segment {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+span.seg-title {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 70px;
+    border-bottom: 1px solid #eee;
+    /* text-align: center; */
+}
+/* .imgs-loop {
+    position: relative;
+    display: inline-block;
+    float: left;
+    overflow-x: hidden;
+    width: 1160px;
+} */
+.loop-left {
+    position: absolute;
+    left: -24px;
+    top: 320px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.loop-right {
+    position: absolute;
+    left: 1148px;
+    top: 320px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    z-index: 999;
+    color: black;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.imgs-loop {
+    /* width: 1160px; */
+    /* overflow-x: hidden; */
+    overflow: hidden;
+}
+.images {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 1740px;
+    left: 0;
+    /* width: 1160px; */
+    /* overflow-x: hidden; */
+}
+.img-container {
+    margin: 8px;
+    margin-left: 2px;
+    margin-right: 2px;
+    position: relative;
+    width: 290px;
+    height: 486px;
+    background-color: #999;
+    float: left;
+    background-image: linear-gradient(-180deg, rgba(0,0,0, 0) 53%, #000 100%), url("https://lonelyplanetstatic.imgix.net/copilot/images/Rm9vZCBhbmQgZHJpbmsgNC5wbmdUdWUgQXVnIDIyIDIwMTcgMTA6MTQ6MzMgR01UKzAwMDAgKFVUQyk%3D.jpg?q=60&sharp=10&fit=crop&w=322&h=520");
+    opacity: 0.9;
+    background-size: cover;
+    /* z-index: 10; */
+}
+.img-container:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 30px 60px #999;
+}
+p.category {
+    /* text-align: center; */
+    padding-left: 30px;
+    position: relative;
+    top: 440px;
+    font-size: 16px;
+    color: #fff;
+    /* top: 0px; */
+    /* bottom: 10px; */
+}
+.introduction {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #eee;
+}
+.left-part {
+    width: 395px;
+    /* height: 500px; */
+    /* line-height: 600px; */
+    margin-right: 100px;
+}
+p.talks-to {
+    font-size: 12px;
+    color: #297cbb;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.06px;
+}
+h3.title {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #2c3643;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+p.content {
+    font-size: 14px;
+    color: #67747c;
+    line-height: 23px;
+}
+button.text-more {
+    border: 0px solid transparent;
+    color: #297cbb;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button.text-more:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+
+a.right-part p {
+    padding-top: 15px;
+    font-size: 6px;
+    color: #999;
+    font-weight: 100;
+    text-decoration-style: none;
+}
+
+.video {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+p.video-title {
+    height: 70px;
+}
+span.title-name {
+    line-height: 60px;
+    font-size: 26px;
+    font-weight: 300;
+}
+span.view-more a {
+    float: right;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: rgb(41, 124, 187);
+}
+.video-boxes {
+    position: relative;
+    height: 300px;
+}
+.box {
+    position: relative;
+    border: 1px solid #eee;
+    width: 368px;
+    height: 335px;
+    float: left;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+}
+.box.middle {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.video-image {
+    height: 208px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://lonelyplanetstatic.imgix.net/op-video-sync/images/production/p-5456224509001-brightcove-discover-new-zealands-best-beaches-20170613-060232.jpg?sharp=10&q=50&w=430&h=250&fit=crop);
+    transition: transform 800ms ease-in-out;
+}
+.video-image:hover {
+    transform: scale(1.02);
+}
+.video-name {
+    /* display: flex; */
+    /* align-items: center; */
+    font-size: 24px;
+    font-weight: 300;
+    /* vertical-align: middle; */
+    margin: 35px 20px;
+    /* margin-top: 35px; */
+    /* margin-left: 20px; */
+}
+.video-name a {
+    color: #2c3643;
+}
+.video-name a:hover {
+    color: rgb(41, 124, 187);
+}
+div.play-icon {
+    position: absolute;
+    top: 170px;
+    /* top: -150px; */
+    left: 25px;
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid #fff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    /* border-right: 30px solid yellow; */
+}
+
+.blank {
+    width: 1280px;
+    height: 200px;
+}
+.current-video {
+    position: relative;
+    margin-left: 55px;
+    margin-right: 55px;
+    width: 1160px;
+    height: 354px;
+    border: 1px solid #eee;
+    background-color: #eee;
+}
+/* .current-video-play {
+    position: relative;
+    margin: 160px 551px 150px;
+} */
+
+.video-play {
+    display: none;
+    width: 1160px;
+    height: 354px;
+    position: relative;
+    /* margin: 160px 551px 150px; */
+    /* background-image: url("https://lonelyplanetstatic.imgix.net/op-video-sync/images/production/p-5615409469001-brightcove-lonely-planets-best-region-to-visit-in-2018-20171028-052138.jpg?sharp=10&q=40&w=1290&h=354&fit=crop"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.current {
+    display: block;
+}
+.current-video-title {
+    font-size: 32px;
+    color: white;
+    /* padding-top: 135px; */
+    font-weight: 600;
+    /* padding-left: 36px; */
+    position: relative;
+    top: 135px;
+    left: 36px;
+}
+.current-video-intro {
+    font-size: 15px;
+    color: white;
+    /* padding-top: 20px; */
+    /* padding-bottom: 85px; */
+    /* padding-left: 36px; */
+    position: relative;
+    left: 36px;
+    top: 155px;
+}
+.circle.image {
+    /* margin-left: 35px; */
+    /* left: 36px; */
+    /* top: 190px; */
+    /* top: 10%; */
+    /* margin-top: 240px; */
+    top: 255px;
+    left: 35px;
+    position: absolute;
+}
+.play-icon-circle {
+    /* top: 13px; */
+    /* left: 19px; */
+    /* line-height: 50px; */
+    top: 270px;
+    left: 55px;
+    border-left: 24px solid black;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    position: absolute;
+    /* vertical-align: middle; */
+}
+.playicon:hover .circle.image {
+    width: 64px;
+    height: 64px;
+    left: 31px;
+    top: 251px;
+    background-color: rgb(41, 124, 187);
+    transition: background-color 300ms, transform 300ms, box-shadow 300ms ease-in-out;    
+}
+.playicon:hover .circle {
+    width: 64px;
+    height: 64px;
+    left: 550px;
+    top: 115px;
+    background-color: rgb(41, 124, 187);
+    transition: background-color 300ms, transform 300ms, box-shadow 300ms ease-in-out;    
+}
+.playicon:hover .play-icon-circle {
+    border-left-color: #fff;
+}
+
+video.play-video {
+    position: absolute;
+    /* bottom: 0; */
+}
+.autoplay-video-title {
+    text-transform: uppercase;
+    position: relative;
+    color: #fff;
+    font-size: 56px;
+    width: 600px;
+    font-weight: 900;
+    left: 275px;
+    top: 98px;
+}
+.circle {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    top: 120px;
+    left: 555px;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 50%;
+}
+.play-icon-circle.video {
+    top: 213px;
+    left: 515px;
+}
+.loop-right.playicon {
+    top: 150px;
+    left: 1135px;
+}
+
+.no-current {
+    display: none;
+}
+
+.video-classify {
+    display: block;
+    /* margin-left: 60px; */
+    height: 265px;
+    position: relative;
+    margin: 30px 65px 30px 55px;
+}
+.classifyname {
+    display: block;
+    position: relative;
+}
+.video-classify a {
+    /* text-decoration: none; */
+    color: black;
+    display: block;
+}
+span.classify_title {
+    font-size: 20px;
+}
+span.view_all {
+    font-size: 12px;
+    text-transform: uppercase;
+    float: right;
+    color: rgb(41, 124, 187);
+}
+
+.video_cards {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.slide-video-cards {
+    position: relative;
+    height: 240px;
+    left: 0px;
+    /* width: 2336px; */
+}
+.card {
+    float: left;
+    margin: 20px 8px;
+    overflow: hidden;
+}
+.first {
+    margin-left: 0px;
+}
+.last {
+    margin-right: 0px;
+}
+.video_image {
+    width: 278px;
+    height: 155px;
+    /* border: 1px solid; */
+    background-image: url("https://lonelyplanetstatic.imgix.net/op-video-sync/images/production/p-5615400608001-brightcove-lonely-planets-best-destinations-to-visit-in-2018-20171028-052139.jpg?sharp=10&q=50&w=430&h=250&fit=crop");
+    background-size: cover;
+    background-position: center;
+    transition: transform 800ms ease-in-out;
+}
+
+/* .video_image:hover + .hover_image {
+    display: block;
+}
+.video_image:hover + .playicon_small {
+    display: block;
+} */
+
+.cover_hover {
+    display: none;
+    position: relative;
+    /* top: 10px;
+    transition: top 200ms ease;     */
+}
+.card:hover .cover_hover {
+    display: block;
+    /* top: 0px; */
+    /* transition: top 200ms ease; */
+}
+.card:hover .video_image {
+    transform: scale(1.03);
+}
+
+.hover_image {
+    /* display: none; */
+    position: absolute;
+    background-color: #3b444f;
+    top: -155px;
+    width: 278px;
+    height: 155px;
+    opacity: 0.3;
+}
+
+.playicon_small {
+    /* display: none; */
+    position: absolute;
+    top: 155px;
+    /* top: 155px; */
+}
+.circle_image_small {
+    /* top: 98px; */
+    /* left: 18px; */
+    top: -205px;
+    left: 21px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.play_icon_circle_small {
+    position: absolute;
+    /* top: 509px; */
+    /* top: 100px; */
+    top: -197px;
+    border-left: 12px solid black;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    left: 33px;
+}
+.playicon_small:hover .circle_image_small {
+    width: 40px;
+    height: 40px;
+    left: 16px;
+    top: -210px;
+    background-color: rgb(41, 124, 187);
+}
+.playicon_small:hover .play_icon_circle_small {
+    border-left-color: white;
+}
+.video_name {
+    /* position: relative; */
+    position: absolute;
+    margin: 15px 0px;
+    top: 175px;
+    width: 278px;
+    /* top: -155px; */
+}
+.video_name:hover {
+    color: rgb(41, 124, 187);
+}
+.loop-left.small {
+    display: none;
+    top: 100px;
+    position: absolute;
+    /* top: 1175px; */
+}
+.loop-right.small {
+    top: 100px;
+    left: 1135px;
+    position: absolute;
+    /* top: 1175px; */
+}
